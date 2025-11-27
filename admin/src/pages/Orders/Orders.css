@@ -1,0 +1,74 @@
+.order.add{
+    width: 100%;
+}
+
+.order-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order h3{
+    font-weight: 600;
+    font-size: max(2vw, 18px);
+}
+
+.refresh-btn{
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.refresh-btn:hover{
+    background-color: #ff4d4d;
+}
+
+.order-list{
+    margin-top: 30px;
+}
+
+.order-item{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    align-items: start;
+    gap: 30px;
+    border: 1px solid tomato;
+    padding: 20px;
+    margin: 30px 0px;
+    font-size: 14px;
+    color: #505050;
+}
+
+.order-item img{
+    width: 50px;
+}
+
+.order-item-food{
+    margin-top: -3px;
+}
+
+.order-item select{
+    background-color: #ffe8e4;
+    border: 1px solid tomato;
+    max-width: 120px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+@media (max-width:900px) {
+    .order-item{
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 15px;
+    }
+    .order-item p:nth-child(3),
+    .order-item p:nth-child(4){
+        display: none;
+    }
+}
